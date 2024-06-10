@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<title></title>
+</head>
+<body>
+	<div class="menu">
+		<div class="preview">
+            <a href="https://www.agoda.com/"><i class="fa-solid fa-camera"></i>&nbsp; Gallery <a>
+            <a href="https://www.google.com/maps"><i class="fa-solid fa-location-dot"></i>&nbsp; Location &nbsp;|<a>
+            <a href=""><i class="fa-regular fa-user"></i> Sign In &nbsp;&nbsp;|</a>
+            <a > FEEL HOME </a>
+        </div>
+        <div class="secondline">
+        	<div class="logo">
+	            <img class="logo" src="images/logo.png">        
+	        </div>
+	        <div class="nav">
+	            <ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="webpages/rooms.html">ROOMS</a></li>
+					<li><a href="webpages/contact.html">CONTACT US</a></li>
+					<li><a href="webpages/agreement.html">AGREEMENT</a></li>
+					<li><a href="webpages/book.html">BOOK NOW</a></li>
+	            </ul>
+	        </div>
+        </div>   
+	</div>
+	<div class="banner">
+		<img src="images/tahanan.jpg">
+	</div>
+	<div class="banner-content">
+        <div class="big-number" id="date"></div>
+        <div class="date-container">
+            <div class="small-text" id="month"></div>
+            <div class="small-lighter" id="weekday"></div>
+        </div>
+        <ul>
+            <li><a href="#standardr">STANDARD ROOMS</a></li>
+            <li><a href="#events">EVENT HALL</a></li>
+            <li><a href="#offers" class="more">FEEL HOME</a></li>
+        </ul>
+    </div>
+    <div class="home-info">
+    	<div class="home-content">
+    		<div class="reach">
+	    		<ul><br>
+	    			<li><a href="">+042 332-1231</a>
+	    			<li><a href="">tahanansaisok34@yahoo.com</a>
+	    		</ul>
+	    	</div>
+	    	<div class="location">
+	    		<br>Tahanan sa Isok<br>A
+	    		Canovas St, Brgy. Isok 1, Boac, Marinduque
+	    	</div>
+	    	<div class="in-out">
+	    		<br>Check-in: 12pm<br>
+	    		Check-out: 11am
+	    	</div>
+    	</div>
+	    	
+    </div>
+	<div class="wrapper">
+		<div class="one">
+			<h1>WELCOME TO TAHANAN SA ISOK!<br>TULOY PO KAYO!</h1><br>
+	    	<p id="standardr">Mabuhay and thank you for visiting us. We hope this message finds you and your loved ones safe & healthy. <br> Tahanan sa Isok is a small hotel in Boac on the beautiful island of Marinduque.<br> We are walking distance to town center and about a 30 minute drive from the port.<br><br></p>
+	    </div>
+	</div>
+	<div class="main">
+        <div class="rooms">
+        	<div class="roompic">
+        		<img src="images/Superior.png">
+        	</div>
+            <div class="roomsinfo">
+                <h1>HOTEL ROOMS</h1><br>
+                <p>Step into our fine hotel rooms, where luxury meets comfort. Each space is thoughtfully designed for your calm relaxation. Experience hospitality and make memories with us.</p>
+            </div>
+            <div class="roompic2">
+        		<img src="images/twin.png">
+        	</div>
+        </div>
+    </div>
+	
+	
+	<div class="mainTwo">
+    	<div class="event">
+        	
+    		<div class="eventinfo">
+        		<h1 id="events">EVENT <br>HALL</h1><br>
+                <p>Elegantly designed and versatile, our event hall is the ideal venue for team occasions. From any work related meetings and corporate gatherings, its relaxed ambiance sets the stage for such events.</p>
+        	</div>
+        	<div class="eventhall2">
+    			<img src="images/eventhall2.png">
+    		</div>
+    		<div class="eventhall">
+    			<img src="images/eventhall1.png">
+    		</div>
+
+		</div>
+	</div>
+
+	<div class="mainThree">
+		<div class="special-offers">
+			<div class="specialinfo">
+				<h1 id="offers">SPECIAL OFFERS</h1>
+			</div>
+			<div class="special">
+				<img src="images/special.png">
+				<div class="special-text">Sorry, no promos available yet <br>Come back some other time <br>Thank you for your patience</div>
+			</div>
+		</div>	
+	</div>
+	
+
+    <div class="footer">
+        <p>&copy; 2024 Feel Home. All rights reserved.</p>
+    </div>
+    
+    <script>
+        var currentDate = new Date();
+        var day = currentDate.getDate();
+        var month = currentDate.toLocaleDateString('en-US', { month: 'short' });
+        var dayOfWeek = currentDate.toLocaleDateString('en-US', { weekday: 'short' });
+
+        document.getElementById('date').textContent = day;
+        document.getElementById('month').textContent = month;
+        document.getElementById('weekday').textContent = dayOfWeek;
+    </script>
+
+</body>
+
+</html>
